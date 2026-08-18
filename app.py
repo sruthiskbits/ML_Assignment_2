@@ -1,6 +1,5 @@
 import streamlit as st, pandas as pd, joblib, os
 st.title("ML Assignment 2 - Breast Cancer Classification")
-st.write("Upload the provided test_data.csv and choose a model.")
 df=st.file_uploader("Upload Test CSV",type="csv")
 model_name=st.selectbox("Model",["Logistic Regression","Decision Tree","kNN","Naive Bayes","Random Forest"])
 if df:
